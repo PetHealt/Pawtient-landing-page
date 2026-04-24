@@ -1,3 +1,6 @@
+/* ==============================
+    PRICING SECTION
+   ============================== */
 .pricing-section {
     padding: 8rem 2rem;
     background-color: var(--bg-alt);
@@ -42,6 +45,7 @@
     box-shadow: 0 30px 60px -12px rgba(20, 184, 166, 0.45);
 }
 
+/* Plan name */
 .plan-name {
     font-size: 1rem;
     font-weight: 800;
@@ -60,6 +64,7 @@
     color: rgba(255, 255, 255, 0.9);
 }
 
+/* Plan price */
 .plan-price {
     font-size: 4rem;
     font-weight: 900;
@@ -77,6 +82,7 @@
     opacity: 0.8;
 }
 
+/* Divider */
 .plan-divider {
     border: 0;
     height: 1px;
@@ -90,6 +96,7 @@
     opacity: 1;
 }
 
+/* Features list */
 .plan-features {
     text-align: left;
     margin-bottom: 3rem;
@@ -118,6 +125,7 @@
     color: rgba(255, 255, 255, 0.9);
 }
 
+/* Buttons */
 .btn-plan {
     width: 100%;
     padding: 1.25rem;
@@ -151,13 +159,9 @@
     box-shadow: 0 10px 25px -5px rgba(255, 255, 255, 0.3);
 }
 
-@media (max-width: 992px) {
-    .pricing-card.featured {
-        transform: scale(1);
-    }
-}
-
-/* Toggle mensual / anual */
+/* ==============================
+    TOGGLE MENSUAL / ANUAL
+   ============================== */
 .pricing-toggle-container {
     display: flex;
     justify-content: center;
@@ -226,39 +230,55 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
-/* Responsive mobile */
-@media (max-width: 768px) {
-    .pricing-grid {
-        display: flex !important;
-        flex-wrap: nowrap !important;
-        overflow-x: auto !important;
-        scroll-snap-type: x mandatory;
-        gap: 1rem !important;
-        padding-bottom: 2rem !important;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
+/* ==============================
+    RESPONSIVE — Tablet (992px)
+   ============================== */
+@media (max-width: 992px) {
+    .pricing-section {
+        padding: 6rem 1.5rem;
     }
 
-    .pricing-grid::-webkit-scrollbar {
-        display: none;
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        gap: 2rem;
+    }
+
+    .pricing-card.featured {
+        transform: scale(1);
+    }
+
+    .pricing-toggle-container {
+        margin-bottom: 2rem;
+    }
+}
+
+/* ==============================
+    RESPONSIVE — Mobile (768px)
+   ============================== */
+@media (max-width: 768px) {
+    .pricing-section {
+        padding: 4rem 1.25rem !important;
+    }
+
+    .pricing-grid {
+        display: flex !important;
+        flex-direction: column !important; /* 🔥 clave */
+        gap: 1.5rem !important;
+        max-width: 100% !important;
     }
 
     .pricing-card {
-        flex: 0 0 85% !important;
-        scroll-snap-align: center !important;
+        width: 100% !important;
         padding: 2rem 1.5rem !important;
         border-radius: 16px !important;
     }
 
+    .pricing-card.featured {
+        transform: none !important;
+    }
+
     .plan-price {
         font-size: 3rem !important;
-    }
-
-    .pricing-toggle-container {
-        gap: 1rem !important;
-    }
-
-    .toggle-label {
-        font-size: 0.95rem !important;
     }
 }
