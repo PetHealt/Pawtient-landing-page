@@ -8,6 +8,8 @@
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 3rem;
     align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .pricing-card {
@@ -15,7 +17,7 @@
     padding: 3.5rem 2.5rem;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
-    border: 1px solid #e5e7eb;
+    border: 1px solid rgba(139, 92, 246, 0.1);
     text-align: center;
     transition: var(--transition);
     display: flex;
@@ -23,8 +25,9 @@
 }
 
 .pricing-card:hover {
-    box-shadow: var(--shadow-xl);
+    box-shadow: 0 20px 40px -10px rgba(139, 92, 246, 0.2);
     transform: translateY(-5px);
+    border-color: rgba(139, 92, 246, 0.3);
 }
 
 .pricing-card.featured {
@@ -32,11 +35,11 @@
     color: var(--white);
     transform: scale(1.03);
     border: none;
-    box-shadow: 0 25px 50px -12px rgba(6, 182, 212, 0.3);
+    box-shadow: 0 25px 50px -12px rgba(139, 92, 246, 0.4);
 }
 
 .pricing-card.featured:hover {
-    box-shadow: 0 30px 60px -12px rgba(6, 182, 212, 0.4);
+    box-shadow: 0 30px 60px -12px rgba(20, 184, 166, 0.45);
 }
 
 .plan-name {
@@ -45,10 +48,15 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 1.5rem;
-    color: var(--brand-dark);
+    background: var(--brand-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .featured .plan-name {
+    background: none;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.9);
     color: rgba(255, 255, 255, 0.9);
 }
 
@@ -72,12 +80,14 @@
 .plan-divider {
     border: 0;
     height: 1px;
-    background-color: #e5e7eb;
+    background: linear-gradient(90deg, var(--brand-purple), var(--brand-teal));
+    opacity: 0.2;
     margin: 2.5rem 0;
 }
 
 .featured .plan-divider {
-    background-color: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.25);
+    opacity: 1;
 }
 
 .plan-features {
@@ -96,16 +106,16 @@
 }
 
 .featured .plan-features li {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .plan-features i {
-    color: var(--brand-blue);
+    color: var(--brand-teal);
     font-size: 1.2rem;
 }
 
 .featured .plan-features i {
-    color: #93c5fd;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .btn-plan {
@@ -120,26 +130,25 @@
 }
 
 .btn-dark {
-    background-color: var(--brand-dark);
+    background: var(--brand-gradient);
     color: var(--white);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 8px 20px -5px rgba(139, 92, 246, 0.35);
 }
 
 .btn-dark:hover {
-    background-color: var(--white);
-    color: var(--brand-dark);
-    box-shadow: 0 10px 15px -3px var(--brand-dark);
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px -5px rgba(139, 92, 246, 0.45);
 }
 
 .featured .btn-dark {
-    background-color: var(--white);
-    color: var(--brand-dark);
+    background: var(--white);
+    color: var(--brand-purple);
 }
 
 .featured .btn-dark:hover {
-    background-color: rgba(255, 255, 255, 0.9);
-    color: var(--brand-dark);
-    box-shadow: 0 10px 15px -3px var(--white);
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 10px 25px -5px rgba(255, 255, 255, 0.3);
 }
 
 @media (max-width: 992px) {
@@ -148,6 +157,7 @@
     }
 }
 
+/* Toggle mensual / anual */
 .pricing-toggle-container {
     display: flex;
     justify-content: center;
@@ -164,7 +174,10 @@
 }
 
 .toggle-label.active {
-    color: var(--brand-blue);
+    background: var(--brand-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-weight: 800;
 }
 
@@ -205,10 +218,47 @@
     border-radius: 50%;
 }
 
-input:checked+.slider {
-    background-color: var(--brand-blue);
+input:checked + .slider {
+    background: var(--brand-gradient);
 }
 
-input:checked+.slider:before {
+input:checked + .slider:before {
     transform: translateX(26px);
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+    .pricing-grid {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        scroll-snap-type: x mandatory;
+        gap: 1rem !important;
+        padding-bottom: 2rem !important;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .pricing-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .pricing-card {
+        flex: 0 0 85% !important;
+        scroll-snap-align: center !important;
+        padding: 2rem 1.5rem !important;
+        border-radius: 16px !important;
+    }
+
+    .plan-price {
+        font-size: 3rem !important;
+    }
+
+    .pricing-toggle-container {
+        gap: 1rem !important;
+    }
+
+    .toggle-label {
+        font-size: 0.95rem !important;
+    }
 }

@@ -1,26 +1,32 @@
 /* ============================================
     GLOBAL — Variables y reset base
-    Pawtient | Sección: Pricing & Roles*/
+    Pawtient | Sección: Pricing & Roles
+   ============================================ */
 
 :root {
-    --brand-blue: #1d4ed8;
-    --brand-blue-light: #3b82f6;
-    --brand-green: #10b981;
-    --brand-dark: #0f172a;
-    --brand-gradient: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+    /* Paleta extraída del logo PetHealth */
+    --brand-blue: #6d28d9;           /* morado oscuro (antes brand-blue) */
+    --brand-blue-light: #8b5cf6;     /* morado medio */
+    --brand-purple: #8b5cf6;         /* morado principal del logo */
+    --brand-teal: #14b8a6;           /* turquesa principal del logo */
+    --brand-teal-light: #2dd4bf;     /* turquesa claro */
+    --brand-green: #14b8a6;          /* remplaza verde anterior por teal */
+    --brand-dark: #1e1333;           /* casi negro con tinte morado */
+    --brand-gradient: linear-gradient(135deg, #8b5cf6 0%, #14b8a6 100%);
+
     --bg-main: #ffffff;
-    --bg-alt: #f8fafc;
-    --bg-light: #f9fafb;
+    --bg-alt: #f8f7ff;               /* blanco con leve tinte morado */
+    --bg-light: #f0fdfa;             /* blanco con leve tinte teal */
     --white: #ffffff;
-    --text-main: #1e293b;
-    --text-dark: #1f2937;
+    --text-main: #1e1b2e;
+    --text-dark: #1e1333;
     --text-muted: #64748b;
     --text-gray: #6b7280;
     --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-    --shadow-elegant: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+    --shadow-elegant: 0 20px 40px -15px rgba(139, 92, 246, 0.08);
     --radius-md: 0.5rem;
     --radius-lg: 1.5rem;
     --transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
@@ -57,14 +63,14 @@ ul {
 
 /* Dark mode */
 html[data-theme="dark"] {
-    --bg-main: #060b19;
-    --bg-alt: #0f172a;
-    --white: #1e293b;
-    --bg-light: #1e293b;
+    --bg-main: #0d0a1a;
+    --bg-alt: #130d26;
+    --white: #1e1333;
+    --bg-light: #1a2e2b;
     --text-main: #f8fafc;
     --text-muted: #94a3b8;
     --text-gray: #94a3b8;
     --brand-dark: #ffffff;
     --text-dark: #ffffff;
-    --shadow-elegant: 0 10px 30px -10px rgba(0, 0, 0, 0.8);
+    --shadow-elegant: 0 10px 30px -10px rgba(139, 92, 246, 0.4);
 }

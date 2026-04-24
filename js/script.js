@@ -39,46 +39,6 @@ function togglePricing() {
     }
 }
 
-// NUEVO: Observador para animaciones al hacer scroll (Scroll Reveal)
-document.addEventListener('DOMContentLoaded', () => {
-    const reveals = document.querySelectorAll('.reveal');
-
-    const revealOnScroll = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-                observer.unobserve(entry.target); // Deja de observar una vez que ya apareció
-            }
-        });
-    }, {
-        threshold: 0.15, // Se activa cuando el 15% del elemento es visible
-        rootMargin: "0px 0px -50px 0px"
-    });
-
-    reveals.forEach(reveal => {
-        revealOnScroll.observe(reveal);
-    });
-});
-
-// ==========================================
-// 1. LÓGICA DEL MODO OSCURO (DARK MODE)
-// ==========================================
-const themeToggleBtn = document.getElementById('theme-toggle');
-const themeIcon = themeToggleBtn.querySelector('i');
-const htmlElement = document.documentElement; // Etiqueta HTML principal
-
-themeToggleBtn.addEventListener('click', () => {
-    if (htmlElement.getAttribute('data-theme') === 'dark') {
-        // Cambiar a Modo Claro
-        htmlElement.removeAttribute('data-theme');
-        themeIcon.classList.replace('fa-sun', 'fa-moon');
-    } else {
-        // Cambiar a Modo Oscuro
-        htmlElement.setAttribute('data-theme', 'dark');
-        themeIcon.classList.replace('fa-moon', 'fa-sun');
-    }
-});
-
 // ==========================================
 // 2. LÓGICA DEL TRADUCTOR (IDIOMA)
 // ==========================================
