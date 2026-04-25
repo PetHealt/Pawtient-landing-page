@@ -1,0 +1,28 @@
+.stats-section {
+    background-color: var(--brand-dark);
+    color: #ffffff;
+    padding: 6rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--brand-green);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    font-weight: 500;
+}

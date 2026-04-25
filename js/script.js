@@ -17,9 +17,13 @@ function togglePricing() {
         periods.forEach(el => el.innerText = 'mes');
     }
 }
+<<<<<<< HEAD
 // Funcionalidad para el switch de precios que ya tenías
 function togglePricing() {
     // ... (Mantén el código que ya tenías aquí adentro) ...
+=======
+function togglePricing() {
+>>>>>>> d9f1939e3a10e068ee15afcd39aa0405231e4b0f
     const isAnnual = document.getElementById('pricing-toggle').checked;
     const amounts = document.querySelectorAll('.price-amount');
     const periods = document.querySelectorAll('.price-period');
@@ -39,7 +43,10 @@ function togglePricing() {
     }
 }
 
+<<<<<<< HEAD
 // NUEVO: Observador para animaciones al hacer scroll (Scroll Reveal)
+=======
+>>>>>>> d9f1939e3a10e068ee15afcd39aa0405231e4b0f
 document.addEventListener('DOMContentLoaded', () => {
     const reveals = document.querySelectorAll('.reveal');
 
@@ -47,11 +54,19 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
+<<<<<<< HEAD
                 observer.unobserve(entry.target); // Deja de observar una vez que ya apareció
             }
         });
     }, {
         threshold: 0.15, // Se activa cuando el 15% del elemento es visible
+=======
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.15,
+>>>>>>> d9f1939e3a10e068ee15afcd39aa0405231e4b0f
         rootMargin: "0px 0px -50px 0px"
     });
 
@@ -60,6 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+<<<<<<< HEAD
 // ==========================================
 // 1. LÓGICA DEL MODO OSCURO (DARK MODE)
 // ==========================================
@@ -74,11 +90,24 @@ themeToggleBtn.addEventListener('click', () => {
         themeIcon.classList.replace('fa-sun', 'fa-moon');
     } else {
         // Cambiar a Modo Oscuro
+=======
+
+const themeToggleBtn = document.getElementById('theme-toggle');
+const themeIcon = themeToggleBtn.querySelector('i');
+const htmlElement = document.documentElement;
+
+themeToggleBtn.addEventListener('click', () => {
+    if (htmlElement.getAttribute('data-theme') === 'dark') {
+        htmlElement.removeAttribute('data-theme');
+        themeIcon.classList.replace('fa-sun', 'fa-moon');
+    } else {
+>>>>>>> d9f1939e3a10e068ee15afcd39aa0405231e4b0f
         htmlElement.setAttribute('data-theme', 'dark');
         themeIcon.classList.replace('fa-moon', 'fa-sun');
     }
 });
 
+<<<<<<< HEAD
 // ==========================================
 // 2. LÓGICA DEL TRADUCTOR (IDIOMA)
 // ==========================================
@@ -94,6 +123,18 @@ langToggleBtn.addEventListener('click', () => {
     langToggleBtn.innerText = currentLang === 'es' ? 'EN' : 'ES';
 
     // Recorrer todos los elementos y cambiarles el texto (usando innerHTML)
+=======
+
+const langToggleBtn = document.getElementById('lang-toggle');
+const elementsToTranslate = document.querySelectorAll('.lang-text');
+let currentLang = 'es';
+
+langToggleBtn.addEventListener('click', () => {
+    currentLang = currentLang === 'es' ? 'en' : 'es';
+
+    langToggleBtn.innerText = currentLang === 'es' ? 'EN' : 'ES';
+
+>>>>>>> d9f1939e3a10e068ee15afcd39aa0405231e4b0f
     elementsToTranslate.forEach(element => {
         if (currentLang === 'en') {
             element.innerHTML = element.getAttribute('data-en');
