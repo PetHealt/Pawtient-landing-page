@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* ============================================
     GLOBAL — Variables y reset base
     Pawtient | Sección: Pricing & Roles
@@ -22,6 +23,8 @@
     --text-main: #1e1b2e;
     --text-dark: #1e1333;
 =======
+=======
+>>>>>>> 3b3cffb0f3d8a2ae29c8b73024e06f9ac2b8552c
 :root {
     --brand-blue: #1d4ed8;
     --brand-blue-light: #3b82f6;
@@ -34,7 +37,10 @@
     --white: #ffffff;
     --text-main: #1e293b;
     --text-dark: #1f2937;
+<<<<<<< HEAD
 >>>>>>> d9f1939e3a10e068ee15afcd39aa0405231e4b0f
+=======
+>>>>>>> 3b3cffb0f3d8a2ae29c8b73024e06f9ac2b8552c
     --text-muted: #64748b;
     --text-gray: #6b7280;
     --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
@@ -42,18 +48,25 @@
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 <<<<<<< HEAD
+<<<<<<< HEAD
     --shadow-elegant: 0 20px 40px -15px rgba(139, 92, 246, 0.08);
 =======
     --shadow-elegant: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
 >>>>>>> d9f1939e3a10e068ee15afcd39aa0405231e4b0f
+=======
+    --shadow-elegant: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+>>>>>>> 3b3cffb0f3d8a2ae29c8b73024e06f9ac2b8552c
     --radius-md: 0.5rem;
     --radius-lg: 1.5rem;
     --transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* Reset */
 =======
+=======
+>>>>>>> 3b3cffb0f3d8a2ae29c8b73024e06f9ac2b8552c
 html[data-theme="dark"] {
     --bg-main: #060b19;
     --bg-alt: #0f172a;
@@ -69,7 +82,10 @@ html[data-theme="dark"] {
     --shadow-elegant: 0 10px 30px -10px rgba(0, 0, 0, 0.8);
 }
 
+<<<<<<< HEAD
 >>>>>>> d9f1939e3a10e068ee15afcd39aa0405231e4b0f
+=======
+>>>>>>> 3b3cffb0f3d8a2ae29c8b73024e06f9ac2b8552c
 * {
     margin: 0;
     padding: 0;
@@ -82,7 +98,10 @@ body {
     color: var(--text-main);
     line-height: 1.6;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 3b3cffb0f3d8a2ae29c8b73024e06f9ac2b8552c
     scroll-behavior: smooth;
     overflow-x: hidden;
     transition: background-color 0.4s ease, color 0.4s ease;
@@ -91,7 +110,10 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+<<<<<<< HEAD
 >>>>>>> d9f1939e3a10e068ee15afcd39aa0405231e4b0f
+=======
+>>>>>>> 3b3cffb0f3d8a2ae29c8b73024e06f9ac2b8552c
 }
 
 ul {
@@ -99,8 +121,11 @@ ul {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* Título de sección reutilizable */
 =======
+=======
+>>>>>>> 3b3cffb0f3d8a2ae29c8b73024e06f9ac2b8552c
 
 .reveal {
     opacity: 0;
@@ -113,7 +138,10 @@ ul {
     transform: translateY(0);
 }
 
+<<<<<<< HEAD
 >>>>>>> d9f1939e3a10e068ee15afcd39aa0405231e4b0f
+=======
+>>>>>>> 3b3cffb0f3d8a2ae29c8b73024e06f9ac2b8552c
 .section-title {
     font-size: 3.5rem;
     font-weight: 800;
@@ -124,6 +152,7 @@ ul {
     line-height: 1.1;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 /* Dark mode */
 html[data-theme="dark"] {
@@ -139,6 +168,8 @@ html[data-theme="dark"] {
     --shadow-elegant: 0 10px 30px -10px rgba(139, 92, 246, 0.4);
 }
 =======
+=======
+>>>>>>> 3b3cffb0f3d8a2ae29c8b73024e06f9ac2b8552c
 .footer {
     text-align: center;
     padding: 3rem;
@@ -381,5 +412,9 @@ html[data-theme="dark"] {
     .info-link {
         font-size: 1rem !important;
     }
+<<<<<<< HEAD
 }
 >>>>>>> d9f1939e3a10e068ee15afcd39aa0405231e4b0f
+=======
+}
+>>>>>>> 3b3cffb0f3d8a2ae29c8b73024e06f9ac2b8552c
