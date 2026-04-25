@@ -1,47 +1,171 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawtient | Pricing & Roles</title>
 
-  <!-- SEO -->
-  <title>BrandRadar – Monitoreo de Reputación en Tiempo Real</title>
-  <meta name="description" content="BrandRadar monitorea, analiza y protege tu reputación digital en tiempo real. Detecta reseñas negativas, menciones en redes sociales y problemas web antes de que se conviertan en una crisis." />
-  <meta name="keywords" content="monitoreo de reputación, protección de marca, social listening, reseñas negativas, reputación de influencers, gestión de marca digital" />
-  <meta name="author" content="Los 5 Suyos" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- Open Graph (para compartir en redes) -->
-  <meta property="og:title" content="BrandRadar – Monitoreo de Reputación en Tiempo Real" />
-  <meta property="og:description" content="Monitorea la presencia digital de tu marca en redes sociales, Google Maps y la web en tiempo real." />
-  <meta property="og:type" content="website" />
-
-  <!-- Tipografías -->
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-
-  <!-- Iconos -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/roles.css">
+    <link rel="stylesheet" href="styles/pricing.css">
 </head>
-
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <h1>BrandRadar</h1>
-  </header>
+    <!-- ===================== -->
+    <!--    SECCIÓN: ROLES     -->
+    <!-- ===================== -->
+    <section class="roles-section">
+        <h2 class="section-title lang-text" data-es="Una plataforma, todo el control" data-en="One platform, total control">
+            Una plataforma, todo el control
+        </h2>
+        <p class="roles-subtitle lang-text" data-es="Haz clic en la tarjeta para descubrir la arquitectura de módulos" data-en="Click on the card to discover the modular architecture">
+            Haz clic en la tarjeta para descubrir la arquitectura de módulos
+        </p>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>¿Qué es BrandRadar?</h2>
-    <p>
-      BrandRadar es una plataforma que monitorea y analiza la reputación digital de tu marca en tiempo real.
-      Detecta reseñas negativas, menciones en redes sociales y posibles riesgos antes de que se conviertan en crisis.
-    </p>
-  </section>
+        <div class="roles-wrapper">
+            <div class="unified-role-card" onclick="this.classList.toggle('expanded')">
+                <div class="role-header">
+                    <div class="role-title-group">
+                        <i class="fa-solid fa-user-doctor role-main-icon"></i>
+                        <div>
+                            <h3 class="role-title lang-text" data-es="Administrador / Veterinario" data-en="Administrator / Veterinarian">
+                                Administrador / Veterinario
+                            </h3>
+                            <p class="role-text lang-text" data-es="Un solo acceso centralizado a todos los módulos de tu clínica." data-en="A single centralized access to all your clinic's modules.">
+                                Un solo acceso centralizado a todos los módulos de tu clínica.
+                            </p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-down role-arrow"></i>
+                </div>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Los 5 Suyos. Todos los derechos reservados.</p>
-  </footer>
+                <div class="role-details">
+                    <hr class="role-divider">
+                    <h4 class="bc-title lang-text" data-es="Módulos del Sistema (Bounded Contexts)" data-en="System Modules (Bounded Contexts)">
+                        Módulos del Sistema (Bounded Contexts)
+                    </h4>
+                    <div class="bc-grid">
+                        <div class="bc-item">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <h5>IAM</h5>
+                            <p class="lang-text" data-es="Gestión de accesos, roles y seguridad." data-en="Access, roles, and security management.">
+                                Gestión de accesos, roles y seguridad.
+                            </p>
+                        </div>
+                        <div class="bc-item">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <h5>Appointments</h5>
+                            <p class="lang-text" data-es="Agenda, programación y cruce de horarios." data-en="Agenda, scheduling, and time conflict resolution.">
+                                Agenda, programación y cruce de horarios.
+                            </p>
+                        </div>
+                        <div class="bc-item">
+                            <i class="fa-solid fa-notes-medical"></i>
+                            <h5>Clinic</h5>
+                            <p class="lang-text" data-es="Triaje, diagnósticos y recetas médicas." data-en="Triage, diagnostics, and medical prescriptions.">
+                                Triaje, diagnósticos y recetas médicas.
+                            </p>
+                        </div>
+                        <div class="bc-item">
+                            <i class="fa-solid fa-box-open"></i>
+                            <h5>Store</h5>
+                            <p class="lang-text" data-es="Insumos, proveedores y alertas de stock." data-en="Supplies, providers, and low stock alerts.">
+                                Insumos, proveedores y alertas de stock.
+                            </p>
+                        </div>
+                        <div class="bc-item">
+                            <i class="fa-solid fa-chart-pie"></i>
+                            <h5>Reports</h5>
+                            <p class="lang-text" data-es="Facturación, cobros y métricas de ingresos." data-en="Billing, payments, and revenue metrics.">
+                                Facturación, cobros y métricas de ingresos.
+                            </p>
+                        </div>
+                        <div class="bc-item">
+                            <i class="fa-solid fa-id-card"></i>
+                            <h5>Profile</h5>
+                            <p class="lang-text" data-es="Gestión de suscripción y planes SaaS." data-en="Subscription and SaaS plans management.">
+                                Gestión de suscripción y planes SaaS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- ====================== -->
+    <!--   SECCIÓN: PRECIOS     -->
+    <!-- ====================== -->
+    <section id="precios" class="pricing-section">
+        <h2 class="section-title lang-text" data-es="MEMBRESÍA" data-en="MEMBERSHIP">MEMBRESÍA</h2>
+
+        <div class="pricing-toggle-container">
+            <span class="toggle-label active lang-text" id="label-mensual" data-es="Mensual" data-en="Monthly">Mensual</span>
+            <label class="switch">
+                <input type="checkbox" id="pricing-toggle" onchange="togglePricing()">
+                <span class="slider round"></span>
+            </label>
+            <span class="toggle-label lang-text" id="label-anual" data-es="Anual" data-en="Annual">Anual</span>
+        </div>
+
+        <div class="pricing-grid">
+
+            <div class="pricing-card basic-plan">
+                <h3 class="plan-name">PLAN PAW BASIC</h3>
+                <div class="plan-price">
+                    $<span class="price-amount" data-monthly="5" data-annual="60">5</span>
+                    <span class="price-period-wrapper">/ <span class="price-period lang-text" data-es="mes" data-en="mo">mes</span></span>
+                </div>
+                <hr class="plan-divider">
+                <ul class="plan-features">
+                    <li><i class="fa-solid fa-circle-check"></i> Veterinarias Limitadas</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Historial Limitado</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Gestión Básica de Citas</li>
+                </ul>
+                <button class="btn-plan btn-dark">Suscribirme Ahora</button>
+            </div>
+
+            <div class="pricing-card pro-plan featured">
+                <h3 class="plan-name">PLAN PAW PRO</h3>
+                <div class="plan-price">
+                    $<span class="price-amount" data-monthly="30" data-annual="360">30</span>
+                    <span class="price-period-wrapper">/ <span class="price-period lang-text" data-es="mes" data-en="mo">mes</span></span>
+                </div>
+                <hr class="plan-divider">
+                <ul class="plan-features">
+                    <li><i class="fa-solid fa-circle-check"></i> Gestión multi-sede</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Historial Ilimitado</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Control mensual de insumos</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Reportes Mensuales</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Gestión De Citas Avanzadas</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Soporte Prioritario</li>
+                </ul>
+                <button class="btn-plan btn-dark">Suscribirme Ahora</button>
+            </div>
+
+            <div class="pricing-card mid-plan">
+                <h3 class="plan-name">PLAN PAW MID</h3>
+                <div class="plan-price">
+                    $<span class="price-amount" data-monthly="15" data-annual="180">15</span>
+                    <span class="price-period-wrapper">/ <span class="price-period lang-text" data-es="mes" data-en="mo">mes</span></span>
+                </div>
+                <hr class="plan-divider">
+                <ul class="plan-features">
+                    <li><i class="fa-solid fa-circle-check"></i> Veterinarias Ilimitadas</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Historial Ilimitado</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Control mensual de insumos</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Reportes Mensuales</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Gestión De Citas</li>
+                </ul>
+                <button class="btn-plan btn-dark">Suscribirme Ahora</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

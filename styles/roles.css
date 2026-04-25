@@ -1,0 +1,142 @@
+.roles-section {
+    padding: 8rem 2rem;
+    text-align: center;
+    background-color: var(--bg-alt);
+}
+
+.roles-subtitle {
+    color: var(--text-gray);
+    margin-bottom: 3rem;
+}
+
+.roles-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.unified-role-card {
+    background: var(--brand-gradient);
+    color: var(--white);
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    overflow: hidden;
+    transition: var(--transition);
+    box-shadow: 0 10px 30px -10px rgba(139, 92, 246, 0.4);
+    text-align: left;
+}
+
+.unified-role-card:hover {
+    box-shadow: 0 20px 40px -10px rgba(139, 92, 246, 0.5);
+    filter: brightness(1.08);
+}
+
+.role-header {
+    padding: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.role-title-group {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.role-main-icon {
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.role-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.role-text {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.role-arrow {
+    font-size: 1.5rem;
+    transition: transform 0.4s ease;
+}
+
+.unified-role-card.expanded .role-arrow {
+    transform: rotate(180deg);
+}
+
+.role-details {
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.4s ease-out;
+    padding: 0 2.5rem;
+    background-color: var(--white);
+    color: var(--text-dark);
+}
+
+.unified-role-card.expanded .role-details {
+    max-height: 1000px;
+    opacity: 1;
+    padding: 0 2.5rem 2.5rem 2.5rem;
+}
+
+.role-divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(90deg, var(--brand-purple), var(--brand-teal));
+    margin-bottom: 2rem;
+    opacity: 0.3;
+}
+
+.bc-title {
+    background: var(--brand-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.bc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.bc-item {
+    background-color: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(139, 92, 246, 0.12);
+    transition: var(--transition);
+}
+
+.bc-item:hover {
+    border-color: var(--brand-purple);
+    box-shadow: 0 4px 15px -5px rgba(139, 92, 246, 0.2);
+}
+
+.bc-item i {
+    background: var(--brand-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.bc-item h5 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.bc-item p {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
