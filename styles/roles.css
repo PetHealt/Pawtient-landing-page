@@ -15,19 +15,19 @@
 }
 
 .unified-role-card {
-    background: var(--brand-gradient);
+    background-color: var(--brand-blue);
     color: var(--white);
     border-radius: var(--radius-lg);
     cursor: pointer;
     overflow: hidden;
     transition: var(--transition);
-    box-shadow: 0 10px 30px -10px rgba(139, 92, 246, 0.4);
+    box-shadow: var(--shadow-md);
     text-align: left;
 }
 
 .unified-role-card:hover {
-    box-shadow: 0 20px 40px -10px rgba(139, 92, 246, 0.5);
-    filter: brightness(1.08);
+    box-shadow: var(--shadow-lg);
+    background-color: #2563eb;
 }
 
 .role-header {
@@ -45,7 +45,7 @@
 
 .role-main-icon {
     font-size: 3rem;
-    color: rgba(255, 255, 255, 0.85);
+    color: #eff6ff;
 }
 
 .role-title {
@@ -86,19 +86,14 @@
 .role-divider {
     border: 0;
     height: 1px;
-    background: linear-gradient(90deg, var(--brand-purple), var(--brand-teal));
+    background-color: #e2e8f0;
     margin-bottom: 2rem;
-    opacity: 0.3;
 }
 
 .bc-title {
-    background: var(--brand-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--brand-blue);
     margin-bottom: 1.5rem;
     font-size: 1.2rem;
-    font-weight: 700;
 }
 
 .bc-grid {
@@ -110,24 +105,14 @@
 .bc-item {
     background-color: var(--bg-light);
     padding: 1.5rem;
-    border-radius: 0.75rem;
-    border: 1px solid rgba(139, 92, 246, 0.12);
-    transition: var(--transition);
-}
-
-.bc-item:hover {
-    border-color: var(--brand-purple);
-    box-shadow: 0 4px 15px -5px rgba(139, 92, 246, 0.2);
+    border-radius: 0.5rem;
+    border: 1px solid #e2e8f0;
 }
 
 .bc-item i {
-    background: var(--brand-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--brand-blue);
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    display: block;
 }
 
 .bc-item h5 {
